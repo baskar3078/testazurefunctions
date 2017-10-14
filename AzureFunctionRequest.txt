@@ -1,0 +1,19 @@
+{
+     
+     "ItemsList" : [
+      	{
+      		"ItemId" : 23,
+      		"ItemName" : "testProduct",
+      		"Qty" : 2,
+      		"Price" : "10.00"
+      	},
+      	{
+      		"ItemId" : 24,
+      		"ItemName" : "testProduct2",
+      		"Qty" : 2,
+      		"Price" : "10.00"
+      	}
+      ],
+      "EmailAddress" :"baskarmib@gmail.com"
+     
+}
