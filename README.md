@@ -19,6 +19,8 @@ Below is the content to go inside local.settings.json
   "Values": {
     "AzureWebJobsStorage": "",
     "AzureWebJobsDashboard": "",
-    "SendGrid": ""
+    "SendGrid": "",
+    "SendGridFromAddress": "",
+    "SendGridSubject" : ""
   }
 }
