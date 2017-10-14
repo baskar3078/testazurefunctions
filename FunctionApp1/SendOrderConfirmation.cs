@@ -68,9 +68,10 @@ namespace FunctionApp1
         static async Task SendOrderConfirmationEmail(string toEmailAddress, string htmlContent)
         {
             var apiKey = System.Configuration.ConfigurationManager.AppSettings["SendGrid"].ToString();
+            var fromaddress = System.Configuration.ConfigurationManager.AppSettings["SendGridFromAddress"].ToString();
+            var subject = System.Configuration.ConfigurationManager.AppSettings["SendGridSubject"].ToString();
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("baskarrao.dandlamudi@outlook.com");
-            var subject = "Order Confirmation Details";
+            var from = new EmailAddress(fromaddress); //Update the from address before publishing to azure.
             var to = new EmailAddress(toEmailAddress);            
             var msg = MailHelper.CreateSingleEmail(from, to, subject, string.Empty, htmlContent);
             var response = await client.SendEmailAsync(msg);
