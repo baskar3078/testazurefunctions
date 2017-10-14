@@ -10,3 +10,15 @@ from the queue and sends an order confirmation email using SendGrid API.
 
 Configuration for storage account and Send Grid API key has to be updated in local.settings.json file after downloading the solution.
 They are currently not included in the solution.
+
+Use the azure function request to post to the http function. You need to use an valid email address to receive the email from Azure Function using SendGrid.
+
+Below is the content to go inside local.settings.json
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "AzureWebJobsDashboard": "",
+    "SendGrid": ""
+  }
+}
