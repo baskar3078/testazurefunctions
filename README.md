@@ -8,7 +8,8 @@ The samples here include three different types of azure functions.
 3. SendOrderConfirmation function uses a Timer Trigger and it executes every 5 minutes to poll the processed order queue and picks 5 orders
 from the queue and sends an order confirmation email using SendGrid API.
 
-Configuration for storage account and Send Grid API key has to be updated in local.settings.json file after downloading the solution.
+Configuration for storage account and Send Grid API key, SendGridFromAddress, SendGridSubject has to be updated in local.settings.json file after downloading the solution.
+
 They are currently not included in the solution.
 
 Use the azure function request to post to the http function. You need to use an valid email address to receive the email from Azure Function using SendGrid.
