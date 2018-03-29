@@ -1,5 +1,5 @@
 # testazurefunctions
-Samples built using Azure Functions for Columbus Code Camp
+Samples built using Azure Functions
 
 The samples here include three different types of azure functions.
 1. Accept Order function uses a Http trigger to receive an Order and responds with Order Number and adds the received order to a queue.
